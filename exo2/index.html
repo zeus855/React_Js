@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX</title>
+    <!-- Library -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- babel => compilation du JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+      .heading {
+        color: rgb(18, 15, 197);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // Création de composant en créant des classes
+      class Jsx extends React.Component {
+        render() {
+          const song = "Life goes on";
+          const numberOfGoodReasonsToBeHere = 150;
+          const disabledButton = <button disabled>Bouton</button>;
+
+          return (
+            <div className="heading">
+              <h1>{this.props.message}</h1>
+              <p>{this.props.subtitle}</p>
+              <div>
+                <p>{song}</p>
+                <p>{numberOfGoodReasonsToBeHere}</p>
+                <p>{disabledButton}</p>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      // Rendu dans le DOM
+      ReactDOM.render(
+        <Jsx message="JSX" subtitle="Exo 2 " />,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
