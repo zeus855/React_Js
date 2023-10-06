@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <!-- Library -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- babel => compilation du JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // Création de composant en créant des classes
+      class Hello extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            counter: 0,
+            text: "Je ne peux pas je suis à Nagano",
+          };
+
+          // Indispensable pour pouvoir manipuler le state depuis incrementCounter
+          this.incrementCounter = this.incrementCounter.bind(this);
+          this.decrementCounter = this.decrementCounter.bind(this);
+          this.remplacerParBaba = this.remplacerParBaba.bind(this);
+        }
+
+        render() {
+          return (
+            <div className="heading">
+              <div>
+                <h1>{this.props.message}</h1>
+                <p>{this.props.subtitle}</p>
+                <p>
+                  Voici un élément Compteur, cliquez sur le bouton pour
+                  découvrir son comportement
+                </p>
+                <h2>Compteur : {this.state.counter}</h2>
+                <button onClick={this.incrementCounter}>Ajouter + 1</button>
+              </div>
+              <div>
+                <p>Remplir la fonction decrementCounter</p>
+                <p>
+                  Lier la fonction decrementCounter dans le constructor comme
+                  pour incrementCounter
+                </p>
+                <p>
+                  Créer un nouveau bouton "Retirer -1" qui va déclencher une
+                  fonction decrementCounter
+                  
+                  <button onClick={this.decrementCounter}>Decrementer de - 1</button>
+
+                </p>
+              </div>
+              <div>
+                <p>Remplir la fonction remplacerParBaba</p>
+                
+                  
+                <p>Lier la fonction remplacerParBaba dans le constructor </p>
+                <p>
+                  Créer un nouveau bouton Remplacer qui va déclencher une
+                  fonction remplacerParBaba
+                </p>
+                <h2>{this.state.text ? "baba" : "Je ne peux pas je suis à Nagano"}</h2>
+                <button onClick={this.remplacerParBaba}>Remplacer</button>
+              </div>
+            </div>
+          );
+        }
+
+        /**
+         * Incrémente la valeur du compteur du state
+         */
+        incrementCounter() {
+        this.setState({
+          counter: this.state.counter + 1
+        })
+        }
+
+        /**
+         * Décrémente la valeur du compteur du state
+         */
+        decrementCounter() {
+          this.setState({
+            counter: this.state.counter -1
+          })
+        }
+
+        /**
+         * Remplace la valeur de text par "Baba"
+         */
+        remplacerParBaba() {
+          this.setState(change => ({
+            text : !change.text
+          }))
+          
+        }
+      }
+
+      // Rendu dans le DOM
+      ReactDOM.render(
+        <Hello message="State" subtitle="exo 7 " />,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

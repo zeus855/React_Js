@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <title>JSX</title>
     <!-- Library -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
     <!-- babel => compilation du JSX -->
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <style>
@@ -70,30 +76,30 @@
                   dessous de ce paragraphe
                   {this.validateButton()}
                 </p>
-                <p>Afficher toutes les propriétés de la variable personne 
-                  Nom: {personne.name} 
+                <p>
+                  Afficher toutes les propriétés de la variable personne Nom:{" "}
+                  {personne.name}
                   age: {personne.age}
                   job: {personne.job.name}
                   job: {personne.age.since}
-                  </p>
-                
-                
+                </p>
+
                 <p>Afficher toutes les propriétés du panier de courses</p>
 
-                {panierDeCourses.map((aliment, index)=>(
-                  <p key={index} >
+                {panierDeCourses.map((aliment, index) => (
+                  <p key={index}>
                     Nom: {aliment.name} - {aliment.type || "non renseigné"}
-                  </p>  
+                  </p>
                 ))}
-
-
-
-                
-              
-                
-                
-
+              --------------------------------------------------------------------------    
                 <p>Afficher toutes les propriétés du catalogue de séries</p>
+                {
+                  this.catalogueSeries().map((serie, index) => (
+                    <p key={index}>
+                      Nom: {serie.name} - {serie.note} - {serie.episodes}
+                    </p>
+                  ))
+                }
               </div>
             </div>
           );
@@ -110,7 +116,7 @@
          * Cette méthode renvoie un bouton Valider au format JSX
          */
         validateButton() {
-          return <button>ValidateButton</button>
+          return <button>ValidateButton</button>;
         }
 
         /*
