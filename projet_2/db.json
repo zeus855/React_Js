@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "title": "premier post",
+      "author": "Joe",
+      "content": "loremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 20,
+      "id": 1
+    },
+    {
+      "title": "deuxième post",
+      "author": "Denis",
+      "content": "loremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 20,
+      "id": 2
+    },
+    {
+      "title": "troisième post",
+      "author": "Peter",
+      "content": "loremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 20,
+      "id": 3
+    },
+    {
+      "author": "Tristepin",
+      "title": "salut",
+      "content": "mon chat",
+      "likes": 0,
+      "id": 4
+    },
+    {
+      "author": "Tristepin",
+      "title": "Salut",
+      "content": "Mon chat",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "author": "Tristepin",
+      "title": "Salut",
+      "content": "Mon chat",
+      "likes": 0,
+      "id": 6
+    },
+    {
+      "author": "Tristepin",
+      "tittle": "",
+      "content": "",
+      "likes": 0,
+      "id": 7
+    }
+  ],
+  "user": [
+    {
+      "pseudo": "Tristepin",
+      "likes": 6,
+      "age": 25,
+      "id": 1
+    }
+  ]
+}

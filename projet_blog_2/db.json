@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "title": " deuxieme post",
+      "author": "Denis",
+      "content": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 20,
+      "id": 2
+    },
+    {
+      "title": " troisieme post",
+      "author": "Peter",
+      "content": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 20,
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "author": "Tristepin",
+      "title": "poste",
+      "content": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem\n\nloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "author": "Tristepin",
+      "title": "chien",
+      "content": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem\n\nloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 0,
+      "id": 6
+    },
+    {
+      "author": "Tristepin",
+      "title": "cheval",
+      "content": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem\n\nloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+      "likes": 0,
+      "id": 7
+    }
+  ],
+  "user": [
+    {
+      "pseudo": "Tristepin",
+      "likes": 6,
+      "age": 25,
+      "id": 1
+    }
+  ]
+}

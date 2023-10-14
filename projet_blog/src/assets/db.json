@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "author": "Yacouba",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      "date": "09/10/2023",
+      "id": 1
+    },
+    {
+      "author": "Joe",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam nobis laudantium sapiente quia officiis dignissimos distinctio aliquam eos ipsa at quam maiores, beatae quidem, amet deleniti veniam exercitationem explicabo optio?",
+      "date": "09/10/2023",
+      "id": 2
+    },
+    {
+      "author": "Cedric",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam nobis laudantium sapiente quia officiis dignissimos distinctio aliquam eos ipsa at quam maiores, beatae quidem, amet deleniti veniam exercitationem explicabo optio?",
+      "date": "10/10/2023",
+      "id": 3
+    }
+  ]
+}

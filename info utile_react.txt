@@ -1,0 +1,25 @@
+Pour creer un nouveau projet en react faire la ligne de commande: npx create-react-app projet_drapeaux
+Pour installer sass						  npm install sass
+Pour installer axios    					  npm i axios
+Pour installer les routes                                         npm i react-router-dom
+Pour lancer le serveur de la base de donnee			npx json-server --watch src/assets/db.json  --port 3003	
+Pour installer JSON                                             npm i -g json-server
+Pour installer redux					npm i -s redux react-redux @reduxjs/toolkit @redux-devtools/extension
+pour allumer le server                                 npm run server														
+
+
+
+
+Babel JavaScript A installer comme extension
+React-Native/React/Redux snippets for   A installer comme extension
+Fullstack React/React Native snippets A installer comme extension
+Simple React Snippets  A installer comme extension
+Reactjs code snippets A installer comme extension
+
+
+
+
+REACT JS n'est que du FRONT, et aussi une bibliotheque
+MVC = Modèle-Vue-Contrôleur
+CDN = CONTENT DELIVERY NETWORK
+JSX = JAVASCRIPT XML
